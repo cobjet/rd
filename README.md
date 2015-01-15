@@ -1,1 +1,5 @@
-# rd
+# R & D
+
+- Research
+
+- Development
