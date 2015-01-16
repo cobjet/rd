@@ -10,7 +10,7 @@ var authController = require('./controllers/auth');
 
 
 // Connect to the beerlocker MongoDB
-mongoose.connect('mongodb://dev:2bees-dev1212@ds045978.mongolab.com:45978/2bees');
+mongoose.connect('mongodb://rw:devrw@ds043947.mongolab.com:43947/dev');
 
 // Create our Express application
 var app = express();
