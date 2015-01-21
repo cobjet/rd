@@ -1,0 +1,50 @@
+// Colors
+// ======
+
+$white: #ffffff;
+$grey: #c0d4db;
+$blue: #002fa7;
+$black: #000000;
+
+
+// Breakpoints
+// ===========
+
+// $smartphone: 480px;
+// $tabletPortrait: 767px;
+// $tabletLandscape: 1024px;
+// $desktop: 1174px;
+
+
+// Font sizes
+// ==========
+
+$paragrah: 12px;
+$name: 20px;
+$title: 36px;
+$over: 90px;
+$letter: 262px;
+
+
+// Font families
+// =============
+
+$ubuntuCondensed: "Ubuntu Condensed", sans-serif;
+$ptSans: "PT Sans", sans-serif;
+$georgia: Georgia, serif;
+$mostraNuova: "Mostra Nuova", sans-serif;
+
+
+// Fontface
+// ========
+
+@font-face {
+    font-family: "Mostra Nuova";
+    src: url("../fonts/mostra_nuova_bold.eot");
+    src: url("../fonts/mostra_nuova_bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/mostra_nuova_bold.woff") format("woff"),
+         url("../fonts/mostra_nuova_bold.ttf") format("truetype"),
+         url("../fonts/mostra_nuova_bold.svg#Mostra Nuova") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

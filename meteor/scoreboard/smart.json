@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "iron-router": {},
+    "accounts-entry": {},
+    "handlebars-server": {},
+    "minimongoid": {},
+    "crypto-base64": {}
+  }
+}

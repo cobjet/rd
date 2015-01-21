@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+core-header-panel{
+	background-color: white;
+}
+
+/* drawer is always visible on a wide screen
+so menu button isn't required */
+core-drawer-panel:not([narrow]) #navicon {
+	display: none;
+}
+
+p {
+	margin: 20px;
+	padding: 80px 20px;
+	border-radius: 20px;
+	background-color: #eee;
+}

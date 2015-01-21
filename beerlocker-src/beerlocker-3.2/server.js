@@ -8,8 +8,12 @@ var userController = require('./controllers/user');
 var authController = require('./controllers/auth');
 
 // Connect to the beerlocker MongoDB
+<<<<<<< HEAD
+mongoose.connect('mongodb://localhost:27017/beerlocker');
+=======
 // mongoose.connect('mongodb://localhost:27017/beerlocker');
 mongoose.connect('mongodb://rw:devrw@ds043947.mongolab.com:43947/dev');
+>>>>>>> 4b7f99d433b45e58a925612c4e96d85afd1545f6
 
 // Create our Express application
 var app = express();
@@ -45,4 +49,8 @@ router.route('/users')
 app.use('/api', router);
 
 // Start the server
+<<<<<<< HEAD
 app.listen(3000);
+=======
+app.listen(3000);
+>>>>>>> 4b7f99d433b45e58a925612c4e96d85afd1545f6

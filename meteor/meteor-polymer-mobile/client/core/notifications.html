@@ -1,0 +1,17 @@
+<template name="notifications">
+  {{#if countNotifications}}
+    <paper-icon-button id="notificationsbtn" icon="social:notifications" alarm></paper-icon-button>
+  {{else}}
+    <paper-icon-button id="notificationsbtn" icon="social:notifications-none"></paper-icon-button>
+  {{/if}}
+  
+  <paper-dialog id="notificationsmenu" class="dialog-notifications" layered="false" transition="core-transition-right">
+    <span>{{countNotifications}} notifications<br/> add more from Mongo shell</span>
+    <core-menu id="menunot">
+      {{#each notifications}}
+        <paper-item data-del id="not-{{_id}}">{{name}}</paper-item>
+      {{/each}}
+    </core-menu>
+  </paper-dialog>
+    
+</template>

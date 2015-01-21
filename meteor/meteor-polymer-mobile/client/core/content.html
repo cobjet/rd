@@ -1,0 +1,17 @@
+<template name="content">
+  <core-header-panel main >
+  
+    <core-toolbar id="contentheader">
+      <paper-icon-button id="navicon" icon="menu"></paper-icon-button>
+      <span id="contenttitle" flex></span>
+      <paper-menu-button>
+        {{> notifications }}
+        {{> more }}
+      </paper-menu-button>
+    </core-toolbar>
+
+    {{> yield}}
+  </core-header-panel>
+</template>
+
+

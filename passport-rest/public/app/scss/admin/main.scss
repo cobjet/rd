@@ -1,0 +1,79 @@
+@import "select2";
+
+// Base
+// ====
+
+body{
+    padding-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    counter-reset: list-elem-counter;
+}
+
+p{
+    margin-top: 15px;
+}
+
+// Layout
+// ======
+
+.starter-template{
+    padding: 40px 15px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+// Modules
+// =======
+
+.glyphicon-trash{
+    cursor: pointer;
+}
+
+.alert{
+    margin-top: 15px;
+}
+
+#sortable{
+    tr:not(.ui-sortable-helper) td:first-child:before{
+        content: counter(list-elem-counter);
+        counter-increment: list-elem-counter;
+    }
+}
+
+.input-group.col-sm-10{
+    padding: 0 15px;
+}
+
+.repeated{
+    margin-top: 5px;
+}
+
+.nav-tabs{
+    margin-bottom: 15px;
+}
+
+.tab-content > .tab-pane{
+    display: block;
+}
+
+// Select2
+// =======
+
+.select2-container{
+    width: 100%;
+    .select2-choices{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input{
+        padding-left: 12px !important;
+    }
+}
+
+.select2-search-choice{
+    line-height: 18px !important;
+}
+
+.select2-search-choice-close{
+    top: 5px !important;
+}

@@ -1,0 +1,76 @@
+
+<head>
+  <title>ashkettle.com</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+
+
+  <style shim-shadowdom>
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+  }
+
+
+
+  core-scroll-header-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+  }
+
+
+  /* background for toolbar when it is at its full size */
+  core-scroll-header-panel::shadow #headerBg {
+    background-image: url(/banner.jpeg);
+  }
+
+  /* background for toolbar when it is condensed */
+  core-scroll-header-panel::shadow #condensedHeaderBg {
+    background-color: #31B404;
+  }
+
+
+  .main-toolbar {
+    color: #f1f1f1;
+    fill: #f1f1f1;
+    background-color: transparent;
+  }
+
+  .title {
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    font-size: 36px;
+  }
+
+  .content {
+    padding: 8px;
+  }
+  .round {
+    border-radius: 50% 50% 50% 50%;
+  }
+
+  paper-button[raised].colored {
+    background: green;
+    color: #fff;
+  }
+
+  .saveButton{
+    float:right;
+  }
+
+  </style>
+
+</head>

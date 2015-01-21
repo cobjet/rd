@@ -1,0 +1,80 @@
+mongorestore --host 127.0.0.1:3001 --db meteor ~/dump/daybbble_meteor_com
+db.hours.renameCollection('snapshots')
+
+
+- 10 things you need to know about Meteor (in the style of Upworthy headlines)
+
+
+
+
+
+# Collections
+Meteor stores data in MongoDB collections, i.e. lists of similar documents.
+
+- modify root commit
+- add empty commit even before root commit?
+- show file structure?
+
+- can you get rid of the "page" parameter when querying the dribbble api? (does it default to 1?)
+
+
+s2=_.first(_.map(Snapshots.find().fetch(), function(s){s.data.shots = _.first(s.data.shots, 12); return s;}), 48)
+
+_.each(s, function(snapshot){Snapshots.insert(snapshot)})
+
+var url = 'https://rawgithub.com/SachaG/9798180/raw/ab3c76d1b13578bc7efe66536f4af6f4486cbfb7/Snapshots.json';
+$.getJSON(url, function(data){
+  _.each(data, function(snapshot){Snapshots.insert(snapshot)});
+});
+
+78 lines of code  
+
+
+
+
+
+# The Meteor Stack
+
+
+
+## Node
+For the server.
+```bash
+node app.js
+```
+
+
+
+## MongoDB
+For the database.
+```js
+Users.find({name: 'Sacha'});
+```
+
+
+
+## Handlebars
+For the templates.
+```html
+{{#each myArray}}
+  <li>{{item}}</li>
+{{/each}}
+```
+
+
+
+## jQuery
+For DOM manipulation.
+```js
+'.button click': function () {
+  $('.links').addClass('inactive');
+}
+```
+
+
+
+## Underscore
+For utility functions.
+```js
+_.pluck(imagesJSONArray, 'url');
+```

@@ -1,0 +1,24 @@
+<template name="menu">
+    <core-header-panel drawer class="menuContent">
+        <core-toolbar class="menuHeader">
+        <div flex> </div><paper-icon-button icon="close" role="button" tabindex="0" class="closeButton"></paper-icon-button>
+        </core-toolbar>
+        <core-menu class="myBaseMenu">
+          <paper-item class="menuItem" id="home" recenteringTouch="true">
+            <i class="fa fa-home menuImage"></i>
+            <a href="/" class="menuItemText">Home</a>
+          </paper-item>
+          <paper-item class="menuItem" id="about" recenteringTouch="true">
+            <i class="fa fa-question menuImage"></i>
+            <a href="/about" class="menuItemText">&nbsp;About</a>
+          </paper-item>
+          {{#if userIsAshkettle}}
+          {{ > addMenu }}
+          {{/if}}
+          <paper-item class="menuItem" id="login" recenteringTouch="true">
+            <i class="fa fa-user menuImage"></i>
+            <span class="menuItemText">{{>loginButtons}}</span>
+          </paper-item>
+        </core-menu>
+    </core-header-panel>
+</template>

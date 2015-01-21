@@ -1,0 +1,15 @@
+<template name="atPwdForm">
+  <div class="at-pwd-form">
+   
+    <di-form data-action="sign-in" id="at-pwd-form" class="{{disabled}}" >
+      {{#each fields}}
+        {{> atInput}}
+      {{/each}}
+      {{#if showForgotPasswordLink}}
+        {{> atPwdLink}}
+      {{/if}}
+      {{> atPwdFormBtn}}
+    </di-form>
+  
+  </div>
+</template>

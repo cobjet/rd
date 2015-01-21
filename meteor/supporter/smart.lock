@@ -1,0 +1,79 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "font-awesome": {},
+      "iron-router": {},
+      "phantomjs": {},
+      "bootstrap-3": {},
+      "accounts-entry": {},
+      "HTML5-History-API": {},
+      "select2": {},
+      "select2-bootstrap3-css": {},
+      "masonrify": {},
+      "roles": {}
+    },
+    "packages": {
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.1.0",
+        "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "phantomjs": {
+        "git": "https://github.com/gadicohen/meteor-phantomjs.git",
+        "tag": "v0.0.2",
+        "commit": "a72eb79af068dd5d5d617ac71a42bd74e0cb52a4"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+      },
+      "accounts-entry": {
+        "git": "https://github.com/Differential/accounts-entry.git",
+        "tag": "v0.7.3",
+        "commit": "7facaa045d3720eeeba3420c28e48d5709188fe3"
+      },
+      "HTML5-History-API": {
+        "git": "https://github.com/tmeasday/meteor-HTML5-History-API.git",
+        "tag": "v4.1.2",
+        "commit": "b5fca79f9ae8936e5f748a04f475295f4fa1cc7a"
+      },
+      "select2": {
+        "git": "https://github.com/nate-strauser/meteor-select2.git",
+        "tag": "v3.4.5",
+        "commit": "4a8d05582b949a14f0ee217c185166abbf112822"
+      },
+      "select2-bootstrap3-css": {
+        "git": "https://github.com/esperadomedia/meteor-select2-bootstrap3-css.git",
+        "tag": "v0.0.5",
+        "commit": "ac0c74d4b110c4c5149f17bb33c3e9bb4f77eb88"
+      },
+      "masonrify": {
+        "git": "https://github.com/voodoohop/meteor-masonrify.git",
+        "tag": "v0.0.3",
+        "commit": "e7a5e71a4193bd68a7bae4c250931147659b5dcb"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.9",
+        "commit": "969b17fac5dfec66b6b12bfce4e37471d1a241d4"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
+        "tag": "v0.0.5",
+        "commit": "ad9539a8818049d5d9fa050d8b2a1f62706483b1"
+      }
+    }
+  }
+}

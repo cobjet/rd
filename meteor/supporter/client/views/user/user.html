@@ -1,0 +1,14 @@
+<template name="user">
+  {{#if user.owner}}
+    edit
+   {{/if}}
+   {{> _userCard user}}
+
+   {{#masonryContainer gutter=20 transitionDuration="0.2s" id="MasonryContainer" }}
+     {{#each needs}}
+       {{#masonryElement "MasonryContainer"}}
+         {{> needListing}}
+       {{/masonryElement}}
+     {{/each}}
+   {{/masonryContainer}}
+</template>

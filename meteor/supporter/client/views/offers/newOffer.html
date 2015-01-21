@@ -1,0 +1,12 @@
+<template name="newOffer">
+    <div class="newOffer">
+      <div class="form-groups">
+          <textarea class="form-control" id="newOffer" type="text"></textarea>
+      </div>
+      {{#if showCharLengthMessage}}
+        <span class='help-block {{charLengthClass}}'>{{chars}} chars {{charLengthMessage}}</span>
+      {{/if}}
+      <a class='btn btn-default cancel'>Cancel</a>
+      <a class="btn btn-primary newOfferButton {{saveButtonClass}}" >Respond</a>
+    </div>
+</template>

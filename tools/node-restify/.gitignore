@@ -1,0 +1,11 @@
+.coverage_data
+cover_html
+node_modules
+docs/*.html
+docs/pkg
+examples/todoapp/node_modules
+*.log
+*.tar.gz
+*.tgz
+build
+docs/*.json

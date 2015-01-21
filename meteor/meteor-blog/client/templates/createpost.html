@@ -1,0 +1,32 @@
+<template name="createPost">
+    <div class="card">
+        <div class="card-icon"><i class="fa fa-pencil"></i>
+        </div>
+        <paper-button raised class="colored saveButton" recenteringTouch="true" role="button" id="savePost">
+            <i class="fa fa-save saveIcon"></i>Save</paper-button>
+        <div class="card-title">Add New Post</div>
+        <div class="createForm">
+            <form name="postForm" id="postForm">
+                <paper-input-decorator floatingLabel label="Title">
+                    <input id="title" is="core-input">
+                </paper-input-decorator>
+
+                <paper-input-decorator floatingLabel label="Summary">
+                    <textarea id="summary"></textarea>
+                </paper-input-decorator>
+
+                <paper-input-decorator floatingLabel label="Blog Post">
+                    <textarea id="blogPost"></textarea>
+                </paper-input-decorator>
+                <paper-radio-group>
+                    <paper-radio-button id="code" label="Code"></paper-radio-button>
+                    <paper-radio-button id="configuration" label="Configuration"></paper-radio-button>
+                    <paper-radio-button id="information" label="Information"></paper-radio-button>
+                    <paper-radio-button id="comments" label="Comments"></paper-radio-button>
+                    <paper-radio-button id="game" label="Games"></paper-radio-button>
+                </paper-radio-group>
+
+            </form>
+        </div>
+    </div>
+</template>

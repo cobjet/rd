@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    background-color: $grey;
+}
+
+*, *:before, *:after, input[type="search"]{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $ubuntuCondensed;
+    font-size: $paragrah;
+    letter-spacing: .1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: $title;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: .11em;
+}
+
+h2{
+    font-size: $name;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue;
+    margin: 0;
+}
+
+h3{
+    font-family: $ubuntuCondensed;
+    font-weight: normal;
+    font-size: $paragrah;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+nav{
+    font-family: $ptSans;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue;
+    z-index: 3;
+    li{
+        width: 60px;
+        border: 1px solid $blue;
+        line-height: 20px;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            border-color: $white;
+            a{
+                transform: translateY(-20px);
+            }
+        }
+        a{
+            display: block;
+            color: $blue;
+            position: relative;
+            transition: transform 400ms;
+            &:after{
+                content: attr(data-title);
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 20px;
+                color: $white;
+            }
+        }
+    }
+}
+
+p{
+    font-family: $georgia;
+    letter-spacing: normal;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+aside{
+    background-color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0 100px;
+    p{
+        font-family: $ubuntuCondensed;
+        letter-spacing: .1em;
+        margin: 0;
+        line-height: 22px;
+    }
+    ul{
+        margin: 0 0 26px;
+        li:before{
+            content: "/";
+            margin: 0 6px;
+        }
+        li:first-child:before{
+            content: normal;
+        }
+    }
+}
+
+ul{
+    padding-left: 0;
+    list-style-type: none;
+    li{
+        display: inline-block;
+    }
+}

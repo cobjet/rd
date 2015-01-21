@@ -1,0 +1,16 @@
+<template name="more">
+  {{#if isCloud}}
+    <paper-icon-button id="cloudbtn" icon="cloud-queue"></paper-icon-button>
+  {{else}}
+    <paper-icon-button id="cloudbtn" icon="cloud-off" alarm></paper-icon-button>
+  {{/if}}
+  <paper-dropdown id="cloudmenu" class="dropdown" halign="right" transition="">
+    <core-menu class="menu">
+      {{#if isCloud}}
+        <paper-item id="setofflinebtn">Set offline</paper-item>
+      {{else}}
+        <paper-item id="setonlinebtn">Set online</paper-item>
+      {{/if}}
+    </core-menu>
+  </paper-dropdown>
+</template>

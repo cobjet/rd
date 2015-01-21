@@ -1,0 +1,61 @@
+<template name="manage">
+    <div class="col col-lg-6">
+        <h2>Manage Subscriptions</h2>
+    <div class="form-group">
+        <h3>Notification Frequency</h3>
+    </div>
+    <div class="form-group">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default now {{#if isNow}}active{{/if}}">
+                <input type="radio" name="freq" value="instantly">Hourly
+            </label>
+            <label class="btn btn-default daily {{#if isDaily}}active{{/if}}">
+                <input type="radio" name="freq" value="daily">Daily
+            </label>
+            <label class="btn btn-default weekly {{#if isWeekly}}active{{/if}}">
+                <input type="radio" name="freq" value="weekly" checked="">Weekly
+            </label>
+            <label class="btn btn-default monthly {{#if isMonthly}}active{{/if}}">
+                <input type="radio" name="freq" value="monthly">Monthly
+            </label>
+            <label class="btn btn-default never {{#if isNever}}active{{/if}}">
+                <input type="radio" name="freq" value="never">Never
+            </label>
+        </div>
+        <a class='btn btn-primary kickit {{#if isSent}}disabled{{/if}}'><i class='icon-ok'></i> {{#if isSent}}Sent!{{else}}Send it to me now!{{/if}}</a>
+     </div>
+
+    <div class="form-group">
+        <h3>Tags you're subscribed to</h3>
+    </div>
+    <div class="form-group">
+        <ul class="list-group">
+        {{#if tags}}
+            {{#each tags}}
+              {{> tagStub}}
+            {{/each}}
+        {{else}}
+            <div class="alert alert-info">Looks like you aren't subscribed to anything</div>
+        {{/if}}
+        </ul>
+    </div>
+    <div class="form-group">
+        <h3>Cards you're watching</h3>
+    </div>
+    <div class="form-group">
+        {{#if hasCards}}
+            {{#masonryContainer gutter=20 transitionDuration="0.2s" id="MasonryContainer" }}
+                {{#each watchedCards}}
+                    {{#masonryElement "MasonryContainer"}}
+                        {{> needListing}}
+                    {{/masonryElement}}
+                {{/each}}
+            {{/masonryContainer}}
+        {{else}}
+          <div class="alert alert-info">Looks like you aren't watching anything</div>
+        {{/if}}
+    </div>
+    <a class='btn btn-primary done'><i class='icon-ok'></i> done</a>
+    </div>
+
+</template>

@@ -1,0 +1,17 @@
+<template name="toolbar">
+    <core-drawer-panel class="menuDrawer" forceNarrow="true">
+        {{>menu}}
+        <core-scroll-header-panel condenses main>
+            <core-toolbar class="tall main-toolbar">
+                <paper-icon-button icon="menu" role="button" tabindex="0" class="menuButton"></paper-icon-button>
+                <div flex></div>
+                {{>myImage}}
+                <div class="bottom indent title" id="mainTitle"> <a href="/">Ashkettle.com</a>
+                </div>
+            </core-toolbar>
+            <div class="content">
+                {{> yield}}
+            </div>
+        </core-scroll-header-panel>
+    </core-drawer-panel>
+</template>

@@ -1,0 +1,64 @@
+/* CSS declarations go here */
+.card {
+    display: inline-block;
+    background: white;
+    box-sizing: border-box;
+    /*width: 168px;*/
+    width: 47%;
+    height: 140px;
+    margin: 2px;
+    padding: 16px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.queryCard {
+    display: inline-block;
+    background: white;
+    box-sizing: border-box;
+    /*width: 350px;*/
+    width: 90%;
+    height: 275px;
+    margin-top: 5px;
+    margin-left: 5%;
+    padding: 16px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.companyLogo {
+    width: 300px;
+    height: 175px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto
+}
+.companyLogoDIV {
+    background-color: white;
+    text-align: center;
+}
+.companyActivitiesDIV {
+    height: 310px;
+    width: 92%;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.paragraphHeadingBlue {
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+    font-size: 16px;
+}
+.paragraphHeadingOrange {
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.spacer{
+
+}
+
+@media only screen and (max-width: 599px) {
+    /*.companyLogoDIV{*/
+        /*width: 50%;*/
+    /*}*/
+}

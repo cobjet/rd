@@ -1,0 +1,19 @@
+<template name="background">
+ <div class="container">
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             {{name}}
+         </div>
+         <div class="panel-body">
+             {{description}}
+         </div>
+     </div>
+     {{#masonryContainer gutter=20 transitionDuration="0.2s" id="MasonryContainer" }}
+     {{#masonryElement "MasonryContainer"}}
+       {{#each needs}}
+         {{> needListing}}
+       {{/each}}
+     {{/masonryElement}}
+     {{/masonryContainer}}
+ </div>
+</template>

@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "font-awesome": {},
+    "iron-router": {},
+    "phantomjs": {},
+    "bootstrap-3": {},
+    "accounts-entry": {},
+    "HTML5-History-API": {},
+    "select2": {},
+    "select2-bootstrap3-css": {},
+    "masonrify": {},
+    "roles": {}
+  }
+}

@@ -1,0 +1,29 @@
+<div ng-include src="'/static/templates/admin/menu.html'"></div>
+
+<div class="container">
+    <div class="starter-template">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Link</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="sortable" ui-sortable="sortableOptions" ng-model="data.projects">
+                <tr ng-repeat="project in data.projects" ng-class="{warning: !project.publish}">
+                    <td></td>
+                    <td>{{project.title}}</td>
+                    <td>{{project.date|date: 'MMMM yyyy'}}</td>
+                    <td><a ng-href="{{project.link}}" target="blank">{{project.link}}</a></td>
+                    <td><a ng-href="#/projects/{{project._id}}/"><span class="glyphicon glyphicon-edit"></span></a></td>
+                    <td><a ng-click="deleteProject(project)"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-success" ng-show="data.saveSort" ng-click="updateSort()">Save new sort</button>
+    </div>
+</div>

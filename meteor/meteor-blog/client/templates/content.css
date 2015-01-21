@@ -1,0 +1,134 @@
+
+
+.card {
+    border: 1px solid #bebebe;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+}
+.card-icon {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: #ddd;
+    line-height: 64px;
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+}
+.card-title {
+    font-size: 22px;
+    padding: 8px 0 16px;
+    color: #888;
+}
+.card-summary {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.card-icon-size{
+  height:12px;
+  width:12px;
+}
+
+.accounts-dialog{
+  margin-left:-65px;
+  z-index:999;
+}
+
+.login-link-text{
+  color:#ffffff;
+}
+
+.menuItem{
+  color:#ffffff;
+  font-size:20px;
+
+}
+.menuItem.core-selected{
+  color:#333300;
+
+}
+
+.detail-title {
+  font-size: 22px;
+  padding: 8px 0 16px;
+}
+
+.menuImage {
+  padding-right:25px;
+}
+
+.saveIcon{
+  padding-right:5px;
+}
+
+.closeButton{
+  color:#ffffff;
+}
+
+.menuItemText{
+  padding-left:3px;
+  vertical-align:bottom;
+}
+
+.menuHeader{
+  background-color:#336600;
+}
+
+.menuContent{
+  background-color:#333300;
+}
+
+.createForm{
+  padding-left:15%;
+  padding-right:15%;
+}
+
+.edit-options{
+   float: right;
+}
+
+.timestamp{
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+}
+.detailTimeStamp{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+  #home a:link {color: #ffffff; text-decoration: none; }
+  #home a:active {color: #ffffff; text-decoration: none; }
+  #home a:visited {color: #ffffff; text-decoration: none; }
+  #home a:hover {color: #ffffff; text-decoration: none; }
+
+  #about a:link {color: #ffffff; text-decoration: none; }
+  #about a:active {color: #ffffff; text-decoration: none; }
+  #about a:visited {color: #ffffff; text-decoration: none; }
+  #about a:hover {color: #ffffff; text-decoration: none; }
+
+  #create a:link {color: #ffffff; text-decoration: none; }
+  #create a:active {color: #ffffff; text-decoration: none; }
+  #create a:visited {color: #ffffff; text-decoration: none; }
+  #create a:hover {color: #ffffff; text-decoration: none; }
+
+  .login-link-and-dropdown-list a:link {color: #ffffff; text-decoration: none; }
+  .login-link-and-dropdown-list a:active {color: #ffffff; text-decoration: none; }
+  .login-link-and-dropdown-list a:visited {color: #ffffff; text-decoration: none; }
+  .login-link-and-dropdown-list a:hover {color: #ffffff; text-decoration: none; }
+
+  #mainTitle a:link {color: #ffffff; text-decoration: none; }
+  #mainTitle a:active {color: #ffffff; text-decoration: none; }
+  #mainTitle a:visited {color: #ffffff; text-decoration: none; }
+  #mainTitle a:hover {color: #ffffff; text-decoration: none; }
+
+
+  .menuItem.core-selected > a:link {color: #333300 !important; text-decoration: none; }
+  .menuItem.core-selected > a:active {color: #333300 !important; text-decoration: none; }
+  .menuItem.core-selected > a:visited {color: #333300 !important; text-decoration: none; }
+  .menuItem.core-selected > a:hover {color: #333300 !important; text-decoration: none; }

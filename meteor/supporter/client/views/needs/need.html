@@ -1,0 +1,56 @@
+<template name="need">
+  <div class='container'>
+    <div class='panel panel-primary'>
+      <div class='panel-heading'>
+        {{content}}
+      </div>
+      <div class='panel-footer clearfix'>
+        <a title='posted by' href="/u/{{username}}">{{username}}</a> {{date createdAt}}
+        <a class="offerList" href="/need/{{_id}}"><span class="badge">{{pluralize offerCount}}</span></a>
+        <a class="needScore"><span class="badge">{{scoreCount}}</span> </a>
+        <div class='pull-right'>
+
+          {{#if owner}}
+            <a title='remove' class='delete'><i class='icon-remove'></i></a>
+            <a title='complete' class='complete'><i class='icon-ok'></i></a>
+          {{else}}
+            {{#if currentUser}}
+              {{#if watching}}
+                <a class='btn btn-success unwatch'><i class='icon-eye'></i> Unwatch</a>
+              {{else}}
+                <a class='btn btn-default watch'><i class='icon-eye'></i> Watch</a>
+              {{/if}}
+              <a class='btn btn-default respond'><i class='icon-mail-reply'></i> Respond</a>
+              <a class='btn btn-default send'><i class='icon-mail-forward'></i> Share</a>
+            {{/if}}
+          {{/if}}
+        </div>
+      </div>
+    </div>
+
+    {{#if isReplying}}
+      <div class="well">
+        {{> newOffer}}
+      </div>
+    {{/if}}
+    {{#unless isReplying}}
+        {{#if owner}}
+          <div class='well'>
+            Respond to people via email, and close this need when you're all good.
+          </div>
+        {{/if}}
+
+        {{#unless currentUser}}
+          <div class='well'>
+            <a href='/sign-in'>Sign in</a> or <a href='/sign-up'>sign up</a> to post or respond to needs.
+          </div>
+        {{/unless}}
+    {{/unless}}
+    <div class="offer offers-list">
+      {{#each offers}}
+        {{> offerDetail}}
+      {{/each}}
+    </div>
+    {{> sendNeed}}
+  </div>
+</template>

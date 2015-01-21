@@ -1,0 +1,25 @@
+
+<template name="refill">
+  <core-menu>
+    <p>Click a line to delete it</p>
+    {{#each refill}}
+    <paper-item data-del>{{name}}</paper-item>
+    {{else}}
+    <p>Click + to refill</p>
+    {{/each}}
+  </core-menu>
+  <paper-fab mini icon="add" label="Refill"></paper-fab>
+</template>
+
+
+<template name="refillpopup">
+  <paper-action-dialog id="refillpopup" backdrop layered="false">
+    <core-menu>
+      {{#each refill}}
+      <paper-item data-del>{{name}}</paper-item>
+      {{/each}}
+    </core-menu>
+    <paper-button affirmative autofocus>Close</paper-button>
+  </paper-action-dialog>
+</template>
+

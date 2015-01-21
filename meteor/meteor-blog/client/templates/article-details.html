@@ -1,0 +1,11 @@
+<template name="articleDetails">
+    <div class="card">
+        {{#if userIsAshkettle}}
+        <div class="edit-options">
+            <paper-button raised class="colored" recenteringTouch="true" role="button" id="deleteButton">
+                <i class="fa fa-trash saveIcon"></i>Delete</paper-button>
+        </div>
+        {{/if}} {{#markdown}} {{content}} {{/markdown}}
+    <div class="detailTimeStamp">Richard Ashkettle - {{timestamp}}</div>
+    </div>
+</template>

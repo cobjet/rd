@@ -1,0 +1,16 @@
+<template name="editNeed">
+  <div class="editNeed">
+    <div class="form-group">
+      <textarea class='form-control' id="editNeedContent" type="text" placeholder="what do you need help with?">{{content}}</textarea>
+    </div>
+    <div class="form-group">
+      <input class="form-control" id="edit-tags" placeholder="tags" value="{{tags}}">
+    </div>
+
+    {{#if showCharLengthMessage}}
+      <span class='help-block {{charLengthClass}}'>{{chars}} chars {{charLengthMessage}}</span>
+    {{/if}}
+    <a class='btn btn-default cancel'>Cancel</a>
+    <a class="btn btn-primary editNeedButton {{saveButtonClass}}" >Save</a>
+  </div>
+</template>

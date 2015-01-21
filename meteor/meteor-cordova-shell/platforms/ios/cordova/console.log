@@ -1,0 +1,72 @@
+2014-06-07 21:22:25.077 Example[82834:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-07 21:22:25.101 Example[82834:70b] Unlimited access to network resources
+2014-06-07 21:22:25.104 Example[82834:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-07 21:22:25.386 Example[82834:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:22:25.387 Example[82834:70b] [CDVTimer][splashscreen] 142.841995ms
+2014-06-07 21:22:25.391 Example[82834:70b] [CDVTimer][statusbar] 4.305959ms
+2014-06-07 21:22:25.392 Example[82834:70b] [CDVTimer][TotalPluginStartup] 148.122013ms
+2014-06-07 21:22:25.394 Example[82834:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:22:25.400 Example[82834:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:22:25.401 Example[82834:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:22:25.511 Example[82834:70b] Resetting plugins due to page load.
+2014-06-07 21:22:25.626 Example[82834:70b] Finished load of: file:///Users/adam/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/7D064044-C207-491A-A499-971E9C226042/Example.app/www/index.html
+2014-06-07 21:25:43.497 Example[83843:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-07 21:25:43.517 Example[83843:70b] Unlimited access to network resources
+2014-06-07 21:25:43.521 Example[83843:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-07 21:25:43.755 Example[83843:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:25:43.755 Example[83843:70b] [CDVTimer][splashscreen] 100.857973ms
+2014-06-07 21:25:43.760 Example[83843:70b] [CDVTimer][statusbar] 4.104972ms
+2014-06-07 21:25:43.760 Example[83843:70b] [CDVTimer][TotalPluginStartup] 105.904996ms
+2014-06-07 21:25:43.763 Example[83843:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:25:43.767 Example[83843:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:25:43.768 Example[83843:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:25:43.860 Example[83843:70b] Resetting plugins due to page load.
+2014-06-07 21:25:43.998 Example[83843:70b] Finished load of: file:///Users/adam/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/7D064044-C207-491A-A499-971E9C226042/Example.app/www/index.html
+2014-06-07 21:27:22.335 Example[84510:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-07 21:27:22.341 Example[84510:70b] Unlimited access to network resources
+2014-06-07 21:27:22.343 Example[84510:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-07 21:27:22.365 Example[84510:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:27:22.365 Example[84510:70b] [CDVTimer][splashscreen] 9.085000ms
+2014-06-07 21:27:22.369 Example[84510:70b] [CDVTimer][statusbar] 3.426015ms
+2014-06-07 21:27:22.370 Example[84510:70b] [CDVTimer][TotalPluginStartup] 13.330042ms
+2014-06-07 21:27:22.371 Example[84510:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:27:22.373 Example[84510:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:27:22.374 Example[84510:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:27:22.462 Example[84510:70b] Resetting plugins due to page load.
+2014-06-07 21:27:22.513 Example[84510:70b] Finished load of: file:///Users/adam/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/7D064044-C207-491A-A499-971E9C226042/Example.app/www/index.html
+2014-06-07 21:30:01.885 Example[85414:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-07 21:30:01.892 Example[85414:70b] Unlimited access to network resources
+2014-06-07 21:30:01.895 Example[85414:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-07 21:30:02.113 Example[85414:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:30:02.114 Example[85414:70b] [CDVTimer][splashscreen] 93.432009ms
+2014-06-07 21:30:02.117 Example[85414:70b] [CDVTimer][statusbar] 2.788961ms
+2014-06-07 21:30:02.117 Example[85414:70b] [CDVTimer][TotalPluginStartup] 97.029984ms
+2014-06-07 21:30:02.119 Example[85414:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:30:02.125 Example[85414:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:30:02.126 Example[85414:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-07 21:30:02.234 Example[85414:70b] Resetting plugins due to page load.
+2014-06-07 21:30:02.348 Example[85414:70b] Finished load of: file:///Users/adam/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/7D064044-C207-491A-A499-971E9C226042/Example.app/www/index.html

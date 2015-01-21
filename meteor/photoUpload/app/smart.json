@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "coffee-alerts": {},
+    "spin": {},
+    "font-awesome": {},
+    "fastclick": {},
+    "paginated-subscription": {},
+    "bootstrap3-less": {}
+  }
+}

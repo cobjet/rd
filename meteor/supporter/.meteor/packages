@@ -1,0 +1,24 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+accounts-password
+coffeescript
+less
+accounts-ui
+standard-app-packages
+font-awesome
+iron-router
+phantomjs
+spiderable
+accounts-entry
+bootstrap-3
+email
+HTML5-History-API
+accounts-google
+accounts-facebook
+select2
+select2-bootstrap3-css
+masonrify
+roles

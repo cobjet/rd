@@ -1,0 +1,64 @@
+<template name="needListing">
+  <div class='panel'>
+
+    <div class='panel-header'>
+      <div class='star pull-right'>
+        {{#if showStarred}}
+          {{#if starred}}
+             <a title='star'><i class='fa fa-star'></i></a>
+          {{else}}
+            <a title='star'><i class='fa fa-star-o'></i></a>
+          {{/if}}
+        {{/if}}
+      </div>
+			<div class='panel-background'>
+        {{#unless isEditing}}
+  	      {{#if backgroundName}}
+  	        <a href="/background/{{backgroundId}}">{{backgroundName}}</a>
+            <a title='posted by' href="/u/{{username}}">({{username}})</a>
+  	      {{else}}
+            <a title='posted by' href="/u/{{username}}">{{username}}</a>
+  	      {{/if}}
+        {{/unless}}
+			</div>
+    </div>
+
+    <div class='panel-body'>
+      {{#if isEditing}}
+        {{> editNeed}}
+      {{else}}
+        {{#if isReplying}}
+          {{> newOffer}}
+        {{else}}
+            <p>
+                <a class="need-content" href="/need/{{_id}}">{{content}}</a>
+            </p>
+            {{#each tags}}
+            <a class="badge" href="/{{this}}">{{this}}</a>
+        {{/each}}
+        {{/if}}
+      {{/if}}
+    </div>
+
+    {{#unless isEditing}}
+      <div class='panel-footer'>
+        {{date createdAt}}
+        <a title='responses' class="offerList" href="/need/{{_id}}"><span class="badge">{{offerCount}}</span></a>
+        <div class='pull-right'>
+          {{#if owner}}
+            <a data-toggle='modal' title='remove' class='delete'><i class='fa fa-times'></i></a>
+            <a title='complete' class='complete'><i class='fa fa-check'></i></a>
+            <a title='edit' class="editNeedBtn"><i class='fa fa-edit'></i></a>
+          {{else}}
+            {{#if currentUser}}
+              <a data-toggle='modal' title='respond' class='respond'><i class='fa fa-reply'></i></a>
+              <a title='share' class='send'><i class='fa fa-mail-forward'></i></a>
+            {{/if}}
+          {{/if}}
+        </div>
+      </div>
+    {{/unless}}
+  </div>
+
+  {{> sendNeed}}
+</template>

@@ -1,0 +1,51 @@
+{
+  "name"                 : "ghooks",
+  "description"          : "Simple git hooks",
+  "version"              : "0.2.2",
+  "main"                 : "./lib/runner.js",
+  "keywords"             : [ "git", "hooks", "hook" ],
+  "author"               : "Guilherme Tramontina <guilherme.tramontina@gmail.com>",
+  "homepage"             : "https://github.com/gtramontina/ghooks",
+  "license"              : "unlicense",
+
+  "repository"           : {
+    "type"               : "git",
+    "url"                : "https://github.com/gtramontina/ghooks.git"
+  },
+
+  "bugs"                 : {
+    "url"                : "https://github.com/gtramontina/ghooks/issues"
+  },
+
+  "scripts"              : {
+    "test"               : "make test",
+    "install"            : "./bin/install"
+  },
+
+  "dependencies"         : {
+    "spawn-command"      : "^0.0.2"
+  },
+
+  "devDependencies"      : {
+    "mocha"              : "^2.0.1",
+    "chai"               : "^1.10.0",
+    "sinon"              : "^1.12.1",
+    "sinon-chai"         : "^2.6.0",
+    "proxyquire"         : "^1.1.0",
+    "mock-fs"            : "^2.3.2",
+    "mocha-cov-reporter" : "^1.1.1",
+    "blanket"            : "^1.1.6",
+    "jshint-stylish"     : "^1.0.0",
+    "jshint"             : "^2.5.10",
+    "ghooks"             : "*"
+  },
+
+  "config"               : {
+    "blanket"            : {
+      "pattern"          : "ghooks/lib"
+    },
+    "ghooks"              : {
+      "pre-commit"       : "make test"
+    }
+  }
+}

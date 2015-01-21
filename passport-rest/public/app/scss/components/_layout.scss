@@ -1,0 +1,45 @@
+// Grid
+// ====
+
+$numColumns: 15;
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1%;
+}
+
+.cf:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid{
+    position: relative;
+    margin: 0 1%;
+    float: left;
+}
+
+.no-margin-left{
+    margin-left: 0;
+}
+
+.no-margin-right{
+    margin-right: 0;
+}
+
+@for $i from 1 through $numColumns{
+    .grid-#{$i}{
+        width: 98% * $i/$numColumns - 2 * ($numColumns - $i)/$numColumns;
+        @extend .grid;
+    }
+}
+
+@for $i from 1 through $numColumns - 1{
+    .push-#{$i}{
+        left: 98% * $i/$numColumns - 2 * ($numColumns - $i)/$numColumns + 2;
+    }
+}
