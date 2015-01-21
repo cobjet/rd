@@ -5,12 +5,7 @@ var bodyParser = require('body-parser');
 var Beer = require('./models/beer');
 
 // Connect to the beerlocker MongoDB
-<<<<<<< HEAD
 mongoose.connect('mongodb://localhost:27017/beerlocker');
-=======
-// mongoose.connect('mongodb://localhost:27017/beerlocker');
-mongoose.connect('mongodb://rw:devrw@ds043947.mongolab.com:43947/dev');
->>>>>>> 4b7f99d433b45e58a925612c4e96d85afd1545f6
 
 // Create our Express application
 var app = express();
@@ -29,7 +24,7 @@ var router = express.Router();
 // Initial dummy route for testing
 // http://localhost:3000/api
 router.get('/', function(req, res) {
-  res.json({ message: 'You are running dangerously low on beer!' }); 
+  res.json({ message: 'You are running dangerously low on beer!' });
 });
 
 // Create a new route with the prefix /beers
@@ -117,6 +112,3 @@ app.use('/api', router);
 app.listen(port);
 <<<<<<< HEAD
 console.log('Insert beer on port ' + port);
-=======
-console.log('Insert beer on port ' + port);
->>>>>>> 4b7f99d433b45e58a925612c4e96d85afd1545f6
