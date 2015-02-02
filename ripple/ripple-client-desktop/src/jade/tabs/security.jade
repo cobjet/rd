@@ -1,0 +1,21 @@
+section.col-xs-12.content(ng-controller="SecurityCtrl")
+  .row(ng-show='connected')
+    .col-sm-4.col-md-3.col-xs-12(ng-show="isUnlocked")
+      include settings/navbar
+    .col-sm-8.col-md-9.col-xs-12.list(ng-show="isUnlocked")
+      .showSecurity(ng-show="settingsPage == 'security'")
+        div
+          h4(l10n) Security settings
+          .section
+            .descriptor(l10n) Secret key
+            .row
+            label(l10n) Your secret key unlocks access to your account funds. Please write it down and store it
+                |  somewhere private and safe. In the event you lose your password, you can use this secret
+                |  key to recover your funds.
+            .row
+              .col-xs-9.col-sm-8.col-md-6
+                span.value(ng-show="security.master_seed") {{security.master_seed}}
+                span.value(ng-hide="security.master_seed") ••••••••••••••••••••••••••••••••••••••••••••
+              .col-xs-3.col-sm-4.col-md-3
+                a(href="", ng-click="unmaskSecret()", ng-hide="security.master_seed", l10n) Show
+                a(href="", ng-click="security.master_seed = null", ng-show="security.master_seed", l10n) Hide

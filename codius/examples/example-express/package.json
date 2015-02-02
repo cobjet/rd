@@ -1,0 +1,6 @@
+{
+  "name": "codius-example-express",
+  "dependencies": {
+    "express": "^4.9.6"
+  }
+}

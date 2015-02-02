@@ -1,0 +1,16 @@
+{
+  "name": "example-bitcoin",
+  "apis": [
+    "fs",
+    "secrets",
+    "input",
+    "response"
+  ],
+  "main": "contract.js",
+  "modules": [
+    "bitcoinjs-lib",
+    "bigi",
+    "assert",
+    "bluebird"
+  ]
+}
